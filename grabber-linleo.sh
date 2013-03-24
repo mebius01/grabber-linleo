@@ -66,4 +66,5 @@ rm File-out.txt
 mkdir "$DIR"
 cp Out-Filetxt.txt "$PWD/$DIR"
 cp *.mp3 "$PWD/$DIR"
+(cd "$PWD"/"$DIR" && mv Out-Filetxt.txt "$DIR".txt  )
 rm *.mp3 *.txt ????? ????
