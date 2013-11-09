@@ -4,7 +4,7 @@
 
 PWD=`pwd`
 
-cat Input-Filetxt | sed 's/":"/ - /g' | sed 's/{"context_id":/\n/g' | sed 's/,"/ /g' | sed 's/word_id":/ /g' | awk '{print ($2, $5, $9)}' | sed 's/"//g' | sed 's/ / - /g' > Out-Filetxt.txt
+cat Input-Filetxt | sed 's/":"/ - /g' | sed 's/{"context_id":/\n/g' | sed 's/,"/ /g' | sed 's/word_id":/ /g' | awk '{print ($2, $5, $12)}' | sed 's/"//g' | sed 's/ / - /g' > Out-Filetxt.txt
 url="http://sound.lingualeo.ru/ukenglishfemale/"
 FileId=`awk '{print ($1)}' Out-Filetxt.txt` 
 
