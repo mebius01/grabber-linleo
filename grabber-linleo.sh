@@ -20,7 +20,7 @@ done
 
 funone (){
 	i=`ls $1`
-	d="$PWD/t"
+	d="$PWD/.hush"
 	for j in $i
 	do
 		cat $j $d > "$j`echo .hush`"
